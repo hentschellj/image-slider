@@ -9,11 +9,21 @@ $(document).ready(function($) {
   $('.nav button').on('click', function() {
     const whichButton = $(this).data('nav');
     if (whichButton === 'next') {
-      currentImage++;
-      transition(currentImage, imageWidth);
+      if (currentImage === imageQuantity) {
+        currentImage = 1;
+        transition(currentImage, imageWidth);
+      } else {
+        currentImage++;
+        transition(currentImage, imageWidth);
+      }
     } else if (whichButton === 'prev') {
-      currentImage--;
-      transition(currentImage, imageWidth);
+      if (currentImage === 1) {
+        currentImage = imageQuantity;
+        transition(currentImage, imageWidth);
+      } else {
+        currentImage--;
+        transition(currentImage, imageWidth);
+      }
     }
   });
 
