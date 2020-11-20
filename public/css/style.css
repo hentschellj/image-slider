@@ -30,8 +30,9 @@ a {
 
 .slider ul {
    list-style: none;
-   width: 1500px;
+   width: 500px;
    position: relative;
+   left: 0px;
    padding: 0;
    margin: 0;
 }
