@@ -9,7 +9,7 @@ a {
 }
 
 .main-class {
-  width: 600px;
+  width: 500px;
   margin: auto;
   background-color: white;
   border: 1px solid #ddd;
@@ -21,4 +21,21 @@ a {
   font-size: 110%;
   background-color: #47ad54;
   color: #fff;
+}
+
+.slider {
+  width: 500px;
+  overflow: hidden;
+}
+
+.slider ul {
+   list-style: none;
+   width: 1500px;
+   position: relative;
+   padding: 0;
+   margin: 0;
+}
+
+.slider ul li {
+  float: left;
 }
