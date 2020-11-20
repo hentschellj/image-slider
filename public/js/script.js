@@ -10,12 +10,15 @@ $(document).ready(function($) {
     const whichButton = $(this).data('nav');
     if (whichButton === 'next') {
       currentImage++;
-      const pxValue = -(currentImage - 1) * imageWidth;
-      imageBox.animate({'left' : pxValue});
+      transition(currentImage, imageWidth);
     } else if (whichButton === 'prev') {
       currentImage--;
-      const pxValue = -(currentImage - 1) * imageWidth;
-      imageBox.animate({'left' : pxValue});
+      transition(currentImage, imageWidth);
     }
   });
+
+  function transition(image, width) {
+    const pxValue = -(image - 1) * width;
+    imageBox.animate({'left' : pxValue});
+  }
 });
