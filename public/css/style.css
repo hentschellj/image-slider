@@ -1,5 +1,24 @@
 body {
-  color: #333;
-  font-family: sans-serif;
-  padding: 50px;
+  font-family: 'Helvetica Neue';
+  background-color: #efefef;
+  font-size: 150%;
+}
+
+a {
+  color: blue;
+}
+
+.main-class {
+  width: 600px;
+  margin: auto;
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.header {
+  padding: 15px;
+  font-size: 110%;
+  background-color: #47ad54;
+  color: #fff;
 }
